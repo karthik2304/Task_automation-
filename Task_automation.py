@@ -179,6 +179,10 @@ def main():
             remember(b)
         elif 'send' in a.lower() or 'sms' in a.lower():
             send(d)
+        elif a.lower()=='browser' or 'browser' in a.lower():
+            browser()
+        elif a.lower()=='wifi' or 'wifi' in a.lower():
+            wifi()
         else:
             import webbrowser
             webbrowser.open('https://www.google.com/search?q=' + a)
